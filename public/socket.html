@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <h1>
+            Mira la consola
+        </h1>
+        <script>
+            // Nos aseguramos que las conexiones siempre sean nuevas
+            var socket = io.connect('http://localhost:3000',{
+                forceNew: true
+            })
+            //con esto siempre podemos estar escuchando mensajes, tiene que llamarse igual que en l de index.js
+            socket.on('message',function(data){
+                console.log(data);
+            });
+        </script>
+    </body>
+</html>

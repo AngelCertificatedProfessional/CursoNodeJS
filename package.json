@@ -1,0 +1,24 @@
+{
+  "name": "backendnode",
+  "version": "0.1.0",
+  "description": "Un chat como telegram, pero mucho mejor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "chat",
+    "telegram",
+    "server"
+  ],
+  "author": "Angel Espinoza",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {}
+}
